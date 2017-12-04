@@ -1,6 +1,7 @@
 ﻿using System;
 using Testconsole.AdapterPattern;
 using Testconsole.AnimalChoirSimulator;
+using Testconsole.CalculationExercise;
 
 namespace Testconsole
 {
@@ -44,6 +45,8 @@ namespace Testconsole
 
             Choir choir = new Choir(lowSingerGroup, mediumSingerGroup, highSingerGroup);
 
+            Calculation ca = new Calculation();
+
             ConsoleKeyInfo keyinfo;
             do
             {
@@ -63,6 +66,17 @@ namespace Testconsole
                 if (keyinfo.Key == ConsoleKey.A)
                 {
                     choir.Arpeggio();
+                }
+
+                if (keyinfo.Key == ConsoleKey.F)
+                {
+                    int res = ca.CalculateFactorial(16);
+                    Console.WriteLine("\nCalculateFactorial: " + res);                    
+                }
+
+                if (keyinfo.Key == ConsoleKey.NumPad1)
+                {
+                    ca.Arrays1();
                 }
             }
             while (keyinfo.Key != ConsoleKey.Spacebar);
