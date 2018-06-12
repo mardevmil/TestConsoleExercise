@@ -1,0 +1,11 @@
+C:\projects\TestConsoleExercise\GeneralExercise\bin\Debug\netcoreapp2.0\GeneralExercise.deps.json
+C:\projects\TestConsoleExercise\GeneralExercise\bin\Debug\netcoreapp2.0\GeneralExercise.runtimeconfig.json
+C:\projects\TestConsoleExercise\GeneralExercise\bin\Debug\netcoreapp2.0\GeneralExercise.runtimeconfig.dev.json
+C:\projects\TestConsoleExercise\GeneralExercise\bin\Debug\netcoreapp2.0\GeneralExercise.dll
+C:\projects\TestConsoleExercise\GeneralExercise\bin\Debug\netcoreapp2.0\GeneralExercise.pdb
+C:\projects\TestConsoleExercise\GeneralExercise\obj\Debug\netcoreapp2.0\GeneralExercise.csprojResolveAssemblyReference.cache
+C:\projects\TestConsoleExercise\GeneralExercise\obj\Debug\netcoreapp2.0\GeneralExercise.csproj.CoreCompileInputs.cache
+C:\projects\TestConsoleExercise\GeneralExercise\obj\Debug\netcoreapp2.0\GeneralExercise.AssemblyInfoInputs.cache
+C:\projects\TestConsoleExercise\GeneralExercise\obj\Debug\netcoreapp2.0\GeneralExercise.AssemblyInfo.cs
+C:\projects\TestConsoleExercise\GeneralExercise\obj\Debug\netcoreapp2.0\GeneralExercise.dll
+C:\projects\TestConsoleExercise\GeneralExercise\obj\Debug\netcoreapp2.0\GeneralExercise.pdb
