@@ -1,0 +1,14 @@
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\bin\Debug\Testconsole.exe.config
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\bin\Debug\Testconsole.exe
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\bin\Debug\Testconsole.pdb
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\DesinPatterns.csprojResolveAssemblyReference.cache
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\DesinPatterns.csproj.CoreCompileInputs.cache
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\Testconsole.exe
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\Testconsole.pdb
+C:\projects\TestConsoleExercise\Testconsole\bin\Debug\Testconsole.exe.config
+C:\projects\TestConsoleExercise\Testconsole\bin\Debug\Testconsole.exe
+C:\projects\TestConsoleExercise\Testconsole\bin\Debug\Testconsole.pdb
+C:\projects\TestConsoleExercise\Testconsole\obj\Debug\DesinPatterns.csprojResolveAssemblyReference.cache
+C:\projects\TestConsoleExercise\Testconsole\obj\Debug\DesinPatterns.csproj.CoreCompileInputs.cache
+C:\projects\TestConsoleExercise\Testconsole\obj\Debug\Testconsole.exe
+C:\projects\TestConsoleExercise\Testconsole\obj\Debug\Testconsole.pdb

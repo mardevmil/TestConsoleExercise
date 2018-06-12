@@ -1,51 +1,68 @@
 ﻿using System;
-using Testconsole.AdapterPattern;
-using Testconsole.AnimalChoirSimulator;
-using Testconsole.CalculationExercise;
+using Exercise.AdapterPattern;
+using Exercise.ChainOfResponsibility;
+using Exercise.FactoryPattern;
+using Exercise.Observer;
 
-namespace Testconsole
+namespace Exercise
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\n************************ Singleton Pattern *************************** ");
             // example of using singleton
             Singleton.Instance.TestMethod();
+            
+            Console.WriteLine("\n************************ Factory Pattern *************************** ");
 
-            IAdapter adapter = new AdapterUI1(new UISystem1());
+            var factory = new BasicFactory();
+            var block = factory.CreateBlock();
+            Console.WriteLine("\nCreated with BasicFactory type: " + block.GetName());
 
-            var dog1 = new Dog(Loudness.LOW);
-            var dog2 = new Dog(Loudness.MEDIUM);
-            var dog3 = new Dog(Loudness.HIGH);
+            var factory2 = new SegmentedFactory();
+            var block2 = factory2.CreateBlock();
+            Console.WriteLine("\nCreated with SegmentedFactory type: " + block2.GetName());
 
-            var cat1 = new Cat(Loudness.LOW);
-            var cat2 = new Cat(Loudness.MEDIUM);
-            var cat3 = new Cat(Loudness.HIGH);
+            var generalFactory = new Factory();
+            var block3 = generalFactory.CreateBlock(Factory.Type.Basic);
+            var block4 = generalFactory.CreateBlock(Factory.Type.Segmented);
+            Console.WriteLine("\nCreated with Factory block3: " + block3.GetName() + " block4: " + block4.GetName() );
 
-            var mouse1 = new Mouse(Loudness.LOW);
-            var mouse2 = new Mouse(Loudness.MEDIUM);
-            var mouse3 = new Mouse(Loudness.HIGH);
+            Console.WriteLine("\n************************ Adapter Pattern *************************** ");
 
-            var lowSingerGroup = new SingerGroup(Loudness.LOW);
-            lowSingerGroup.AddToSingerGroup(dog1);
-            lowSingerGroup.AddToSingerGroup(cat1);
-            lowSingerGroup.AddToSingerGroup(mouse1);
+            IAdapter adapter1 = new AdapterUI1(new UISystem1());
+            IAdapter adapter2 = new AdapterUI2(new UISystem2());
 
-            var mediumSingerGroup = new SingerGroup(Loudness.MEDIUM);
-            mediumSingerGroup.AddToSingerGroup(dog2);
-            mediumSingerGroup.AddToSingerGroup(cat2);
-            mediumSingerGroup.AddToSingerGroup(mouse2);
+            adapter1.IncreaseProgress();
+            adapter1.IncreaseHealth();
+            adapter2.IncreaseProgress();
+            adapter2.IncreaseHealth();
+            Console.WriteLine("For additional test press arrow up!");
 
-            var highSingerGroup = new SingerGroup(Loudness.HIGH);
-            highSingerGroup.AddToSingerGroup(dog3);
-            highSingerGroup.AddToSingerGroup(cat3);
-            highSingerGroup.AddToSingerGroup(mouse3);
+            Console.WriteLine("\n************************ Facade Pattern *************************** ");
 
-            highSingerGroup.AddToSingerGroup(mouse1);
+            //Facade
+            Mortgage mortgage = new Mortgage();
 
-            Choir choir = new Choir(lowSingerGroup, mediumSingerGroup, highSingerGroup);
+            //Evaluate mortgage eligibility for customer
+            Customer customer = new Customer("Marko Milovanovic");
+            bool eligible = mortgage.IsEligible(customer, 60000);
+            Console.WriteLine("\n" + customer.Name + " has been " + (eligible ? "Approved" : "Rejected"));
 
-            Calculation ca = new Calculation();
+            Console.WriteLine("\n************************ Chain Of Responsibility Pattern *************************** ");
+            var coinsShopHandler = new BuyCoinsHandler();
+            var costumeShopHandler = new BuyCostumeHandler();
+            var packShopHandler = new BuyPackHandler();
+
+            coinsShopHandler.SetSuccessor(costumeShopHandler);
+            costumeShopHandler.SetSuccessor(packShopHandler);
+
+            coinsShopHandler.HandleRequest(ShopItemType.Costume);
+
+            Console.WriteLine("\n************************ Observer Pattern *************************** ");
+            Game.Instance.Score++;
+            Console.WriteLine("For additional testing press 'I' . We have UIController and AchievementController as observers!");
 
             ConsoleKeyInfo keyinfo;
             do
@@ -53,33 +70,20 @@ namespace Testconsole
                 keyinfo = Console.ReadKey(true);
                 if (keyinfo.Key == ConsoleKey.UpArrow)
                 {
-                    adapter.IncreaseProgress();
-                    adapter.IncreaseHealth();
-                    Console.WriteLine("\n");
+                    Console.WriteLine("\nAdapter Pattern testing:");
+                    adapter1.IncreaseProgress();
+                    adapter1.IncreaseHealth();
+                    adapter2.IncreaseProgress();
+                    adapter2.IncreaseHealth();                                        
                 }
 
-                if (keyinfo.Key == ConsoleKey.C)
+                if (keyinfo.Key == ConsoleKey.I)
                 {
-                    choir.Crescendo();
-                }
-
-                if (keyinfo.Key == ConsoleKey.A)
-                {
-                    choir.Arpeggio();
-                }
-
-                if (keyinfo.Key == ConsoleKey.F)
-                {
-                    int res = ca.CalculateFactorial(16);
-                    Console.WriteLine("\nCalculateFactorial: " + res);                    
-                }
-
-                if (keyinfo.Key == ConsoleKey.NumPad1)
-                {
-                    ca.Arrays1();
+                    Console.WriteLine("\nObserver Pattern testing:");
+                    Game.Instance.Score++;
                 }
             }
-            while (keyinfo.Key != ConsoleKey.Spacebar);
+            while (keyinfo.Key != ConsoleKey.Spacebar);            
         }
     }
 }

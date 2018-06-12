@@ -5,10 +5,10 @@ c:\users\mardevmil\source\repos\Testconsole\Testconsole\obj\Debug\Testconsole.cs
 c:\users\mardevmil\source\repos\Testconsole\Testconsole\obj\Debug\Testconsole.csproj.CoreCompileInputs.cache
 c:\users\mardevmil\source\repos\Testconsole\Testconsole\obj\Debug\Testconsole.exe
 c:\users\mardevmil\source\repos\Testconsole\Testconsole\obj\Debug\Testconsole.pdb
-C:\Users\mardevmil\source\repos\TestConsoleExercise\Testconsole\bin\Debug\Testconsole.exe.config
-C:\Users\mardevmil\source\repos\TestConsoleExercise\Testconsole\bin\Debug\Testconsole.exe
-C:\Users\mardevmil\source\repos\TestConsoleExercise\Testconsole\bin\Debug\Testconsole.pdb
-C:\Users\mardevmil\source\repos\TestConsoleExercise\Testconsole\obj\Debug\Testconsole.csprojResolveAssemblyReference.cache
-C:\Users\mardevmil\source\repos\TestConsoleExercise\Testconsole\obj\Debug\Testconsole.csproj.CoreCompileInputs.cache
-C:\Users\mardevmil\source\repos\TestConsoleExercise\Testconsole\obj\Debug\Testconsole.exe
-C:\Users\mardevmil\source\repos\TestConsoleExercise\Testconsole\obj\Debug\Testconsole.pdb
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\bin\Debug\Testconsole.exe.config
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\bin\Debug\Testconsole.exe
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\bin\Debug\Testconsole.pdb
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\Testconsole.csprojResolveAssemblyReference.cache
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\Testconsole.csproj.CoreCompileInputs.cache
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\Testconsole.exe
+C:\Users\mardevmil\Desktop\Testconsole\Testconsole\obj\Debug\Testconsole.pdb
