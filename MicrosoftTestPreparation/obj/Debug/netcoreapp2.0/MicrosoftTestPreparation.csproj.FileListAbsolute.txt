@@ -1,0 +1,11 @@
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\bin\Debug\netcoreapp2.0\MicrosoftTestPreparation.deps.json
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\bin\Debug\netcoreapp2.0\MicrosoftTestPreparation.runtimeconfig.json
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\bin\Debug\netcoreapp2.0\MicrosoftTestPreparation.runtimeconfig.dev.json
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\bin\Debug\netcoreapp2.0\MicrosoftTestPreparation.dll
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\bin\Debug\netcoreapp2.0\MicrosoftTestPreparation.pdb
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\obj\Debug\netcoreapp2.0\MicrosoftTestPreparation.csprojResolveAssemblyReference.cache
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\obj\Debug\netcoreapp2.0\MicrosoftTestPreparation.csproj.CoreCompileInputs.cache
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\obj\Debug\netcoreapp2.0\MicrosoftTestPreparation.AssemblyInfoInputs.cache
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\obj\Debug\netcoreapp2.0\MicrosoftTestPreparation.AssemblyInfo.cs
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\obj\Debug\netcoreapp2.0\MicrosoftTestPreparation.dll
+C:\projects\TestConsoleExercise\MicrosoftTestPreparation\obj\Debug\netcoreapp2.0\MicrosoftTestPreparation.pdb
