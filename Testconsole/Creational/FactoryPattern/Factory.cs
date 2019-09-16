@@ -19,9 +19,7 @@ namespace Exercise.FactoryPattern
             switch (type)
             {
                 case Type.Basic: return new BasicBlock();
-                    break;
                 case Type.Segmented: return new SegmentedBlock();
-                    break;
                     default: throw new NotSupportedException();
             }            
         }
